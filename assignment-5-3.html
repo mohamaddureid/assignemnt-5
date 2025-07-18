@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 4px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #fffacd;
+            text-align: center;
+        }
+
+        .nested-table td,
+        .nested-table th {
+            border: 1px solid #666;
+            padding: 4px;
+            text-align: center;
+        }
+
+        .compact-row td {
+            padding: 2px;
+
+            line-height: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Main Table with Nested Table in 4th Column</caption>
+        <tr>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email Address</th>
+            <th>Telephone</th>
+        </tr>
+        <tr class="compact-row">
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Home Phone</th>
+                        <th>Work Phone</th>
+                    </tr>
+                    <tr>
+                        <td>888-888-880</td>
+                        <td>888-888-881</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

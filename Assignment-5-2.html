@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table With Cell That Spans Many Columns</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d3cb81;
+            text-align: center;
+        }
+
+        caption {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Table With Cell That Spans Many Columns</caption>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Job Title</th>
+            <th rowspan="2">Email Address</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <th>Work Phone</th>
+            <th>Home Phone</th>
+        </tr>
+        <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+            <td><a class="phone tel:888-888-880">888-888-880</a></td>
+            <td><a class="Phone tel:888-888-881">888-888-881</a></td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Marketing Manager</td>
+            <td>example2@company.com</td>
+            <td><a class="phone tel:888-888-882">888-888-882</a></td>
+            <td><a class="phone tel:888-888-883">888-888-883</a></td>
+        </tr>
+        <tr>
+            <td>Zendaya Grace</td>
+            <td><b>CEO</b></td>
+            <td>example3@company.com</td>
+            <td><a class="phone-link" href="tel:888-888-884">888-888-884</a></td>
+            <td><a class="phone-link" href="tel:888-888-885">888-888-885</a></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
